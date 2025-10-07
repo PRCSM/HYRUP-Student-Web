@@ -56,8 +56,7 @@ const NavBar = () => {
                    </div>
                    
       </div>
-      </div>
-      
+    </div> 
     <div className='w-[70px] h-[96%] border-2 fixed top-[24px] py-4 left-[38px] rounded-2xl bg-white shadow-[5px_3px_1px_black] overflow-hidden hidden lg:flex'>
         <div className='w-full h-full flex flex-col justify-between items-center'>
             <div className='w-full flex flex-col items-center justify-between gap-y-6'>

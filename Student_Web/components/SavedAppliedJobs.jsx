@@ -48,7 +48,7 @@ export const Card = ({typeOf}) => {
     </>
   )
 }
-export const Explore = () => {
+export const SavedAppliedJobs = () => {
   return (
     <>
     <div className='bg-[url("/images/bg.png")] pb-10 hidden sm:block'>
@@ -59,8 +59,8 @@ export const Explore = () => {
         <NavBar />
         <div className='flex-1 ml-35'>
           <div className='font-[Jost] m-8'>
-          <div className='font-semibold text-[45px]'>Top job picks for you</div>
-          <div className='font-regular text-[26px]'>Based on your profile, preference and activity like applies, searches and saves</div>
+          <div className='font-semibold text-[45px]'>Applied Jobs</div>
+          <div className='font-regular text-[26px]'>Check the status of your applied jobs</div>
           </div>
           <div className='flex flex-row m-8 justify-between'>
             <div className='flex flex-row gap-x-12'>
@@ -69,7 +69,6 @@ export const Explore = () => {
               <button className='bg-white text-[17px] h-[50px] cursor-pointer border-2 px-6 py-2 rounded-md font-medium font-[Jost]'>Upcoming</button>
               <button className='bg-white text-[17px] h-[50px] cursor-pointer border-2 px-6 py-2 rounded-md font-medium font-[Jost]'>New</button>
             </div>
-            <div className='font-[Jost] text-[25px] underline font-medium align-bottom pr-10'><span className='cursor-pointer'><Link to={"/jobs"}>View more</Link></span></div>
           </div>
           <div className='flex flex-row px-9 gap-x-14 relative px-10'>
             <div className='border-3 flex justify-center items-center w-[65px] h-[65px] rounded-full shadow-[5px_5px_5px_0px_rgba(0,0,0,0.8)] cursor-pointer absolute bg-white top-[45%] left-1'>
@@ -77,8 +76,8 @@ export const Explore = () => {
               <path d="M2.11621 10.6874L13.0596 1.43445L14.4268 2.58972L5.75195 9.92371L4.84863 10.6874L5.75195 11.451L14.4268 18.786L13.0596 19.9413L2.11621 10.6874Z" fill="#1D1B20" stroke="black" stroke-width="2"/>
               </svg>
             </div>          
-            <Card typeOf={"/jobdetails/maincard"}/>
-            <Card typeOf={"/jobdetails/maincard"}/>
+            <Card typeOf={"/appliedjobcard"}/>
+            <Card typeOf={"/appliedjobcard"}/>
             <div className='border-3 flex justify-center items-center w-[65px] h-[65px] rounded-full shadow-[5px_5px_5px_0px_rgba(0,0,0,0.8)] cursor-pointer absolute bg-white top-[45%] right-5'>
               <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8838 11.3126L2.94043 20.5656L1.57324 19.4103L10.248 12.0763L11.1514 11.3126L10.248 10.549L1.57324 3.21399L2.94043 2.05872L13.8838 11.3126Z" fill="#1D1B20" stroke="black" stroke-width="2"/>
@@ -87,8 +86,8 @@ export const Explore = () => {
           </div>
 
           <div className='font-[Jost] m-8'>
-          <div className='font-semibold text-[45px]'>Hackathon</div>
-          <div className='font-regular text-[26px]'>Based on your profile, preference and activity like applies, searches and saves</div>
+          <div className='font-semibold text-[45px]'>Saved Jobs</div>
+          <div className='font-regular text-[26px]'>Apply the saved Jobs before time runs out</div>
           </div>
           <div className='flex flex-row m-8 justify-between'>
             <div className='flex flex-row gap-x-12'>
@@ -97,7 +96,7 @@ export const Explore = () => {
               <button className='bg-white text-[17px] h-[50px] cursor-pointer border-2 px-6 py-2 rounded-md font-medium font-[Jost]'>Upcoming</button>
               <button className='bg-white text-[17px] h-[50px] cursor-pointer border-2 px-6 py-2 rounded-md font-medium font-[Jost]'>New</button>
             </div>
-            <div className='font-[Jost] text-[25px] underline font-medium align-bottom pr-10'><span className='cursor-pointer'><Link to={"/hackathons"}>View more</Link></span></div>
+            <div className='font-[Jost] text-[25px] underline font-medium align-bottom pr-10'><span className='cursor-pointer'><Link to={"/savedjobs"}>View more</Link></span></div>
           </div>
           <div className='flex flex-row px-9 gap-x-14 relative px-10'>
             <div className='border-3 flex justify-center items-center w-[65px] h-[65px] rounded-full shadow-[5px_5px_5px_0px_rgba(0,0,0,0.8)] cursor-pointer absolute bg-white top-[45%] left-1'>
@@ -105,8 +104,8 @@ export const Explore = () => {
               <path d="M2.11621 10.6874L13.0596 1.43445L14.4268 2.58972L5.75195 9.92371L4.84863 10.6874L5.75195 11.451L14.4268 18.786L13.0596 19.9413L2.11621 10.6874Z" fill="#1D1B20" stroke="black" stroke-width="2"/>
               </svg>
             </div>          
-            <Card typeOf={"/hackathondetails/maincard"}/>
-            <Card typeOf={"/hackathondetails/maincard"}/>
+            <Card typeOf={"/savedjobdetails/maincard"}/>
+            <Card typeOf={"/savedjobdetails/maincard"}/>
             <div className='border-3 flex justify-center items-center w-[65px] h-[65px] rounded-full shadow-[5px_5px_5px_0px_rgba(0,0,0,0.8)] cursor-pointer absolute bg-white top-[45%] right-5'>
               <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8838 11.3126L2.94043 20.5656L1.57324 19.4103L10.248 12.0763L11.1514 11.3126L10.248 10.549L1.57324 3.21399L2.94043 2.05872L13.8838 11.3126Z" fill="#1D1B20" stroke="black" stroke-width="2"/>
@@ -116,13 +115,14 @@ export const Explore = () => {
           </div>
       </div>
     </div>
+
     <div className='bg-[url("/images/bg.png")] md:hidden p-3 mb-30'>
       <div className='flex flex-col'>
         <div className="flex justify-center"><TopSection /></div>
         <div className='flex flex-col gap-y-4 mt-10'>
           <div className='font-[Jost]'>
-          <div className='font-semibold text-[1.2rem] mb-2'>Top job picks for you</div>
-          <div className='font-regular text-[#646464] text-[0.8rem]'>Based on your profile, preference and activity like applies, searches and saves</div>
+          <div className='font-semibold text-[1.2rem] mb-2'>Applied Jobs</div>
+          <div className='font-regular text-[#646464] text-[0.8rem]'>Check the status of your applied jobs</div>
           </div>
           <div className='flex flex-row justify-between gap-x-3'>
             <div className='flex flex-row gap-x-3 overflow-x-auto text-[0.8rem] '>
@@ -236,8 +236,8 @@ export const Explore = () => {
         </div>
         <div className='flex flex-col gap-y-4 mt-10'>
           <div className='font-[Jost]'>
-          <div className='font-semibold text-[1.2rem] mb-2'>Hackathon</div>
-          <div className='font-regular text-[#646464] text-[0.8rem]'>Based on your profile, preference and activity like applies, searches and saves</div>
+          <div className='font-semibold text-[1.2rem] mb-2'>Saved Jobs</div>
+          <div className='font-regular text-[#646464] text-[0.8rem]'>Apply the saved Jobs before time runs out</div>
           </div>
           <div className='flex flex-row justify-between gap-x-3'>
             <div className='flex flex-row gap-x-3 overflow-x-auto text-[0.8rem] '>
@@ -352,3 +352,4 @@ export const Explore = () => {
     </>
   )
 }
+export default SavedAppliedJobs

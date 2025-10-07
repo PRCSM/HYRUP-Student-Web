@@ -3,7 +3,7 @@ import { TopNavBar, LeftNavBar } from './Explore'
 import TopSection from './TopSection'
 import NavBar from './NavBar'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate} from 'react-router-dom'
-const RoleDescription = () => {
+const SavedJobRoleDescription = () => {
   const navigate = useNavigate()
   const back = () => {
     navigate(-1)
@@ -39,9 +39,8 @@ const RoleDescription = () => {
           </div>
         </div>
       </div>
-      <Link className='flex justify-center text-center mt-4' to={"/jobdetails/about"}>More</Link>
     </div>
   )
 }
 
-export default RoleDescription
+export default SavedJobRoleDescription
