@@ -1,5 +1,5 @@
 import React from 'react'
-import { TopNavBar, LeftNavBar, Card } from './Explore'
+import {  Card } from './Explore'
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import TopSection from './TopSection'
 import NavBar from './NavBar'
@@ -7,13 +7,9 @@ import NavBar from './NavBar'
 const HackathonFullView = () => {
   return (
     <>
-        <div className='bg-[url("/images/bg.png")] pb-10 hidden md:block'>
-            <div className='flex flex-col lg:mr-20'>
-            <TopSection />
-          </div>
+        <div className='hidden md:block'>
           <div className='flex flex-row'>
-            <NavBar />
-            <div className='w-screen ml-9 mt-20 ml-35'>
+            <div className='w-screen'>
               <div className='font-[Jost] m-8'>
               <div className='font-semibold text-[45px]'>Hackathon</div>
               <div className='font-regular text-[26px]'>Based on your profile, preference and activity like applies, searches and saves</div>
@@ -33,10 +29,14 @@ const HackathonFullView = () => {
                 <Card typeOf={"/hackathondetails/maincard"}/>
                 <Card typeOf={"/hackathondetails/maincard"}/>
                 <Card typeOf={"/hackathondetails/maincard"}/>
+                <Card typeOf={"/hackathondetails/maincard"}/>
+                <Card typeOf={"/hackathondetails/maincard"}/>
+                <Card typeOf={"/hackathondetails/maincard"}/>
               </div>
             </div>
           </div>
         </div>
+
         <div className='md:hidden pb-20'>
           <div className='flex flex-col p-3'>
             <div className='flex flex-row justify-center'>
@@ -55,10 +55,10 @@ const HackathonFullView = () => {
                         <button className='bg-white cursor-pointer border-2 rounded-md font-medium font-[Jost] px-2'>Always Open</button>
                       </div>
                     </div>
-                    <div className='flex flex-col gap-y-5 mt-4'>
+                    <div className='flex flex-col gap-y-5 mt-4 mx-auto'>
                     <Link to={"/hackathondetails/maincard"}>
                     
-                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4'>
+                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4 w-[296px] h-[224px]'>
                       <div className='bg-blue-900 w-[100%] h-[100px] rounded-2xl mx-auto my-auto'>
                         
                       </div>
@@ -85,7 +85,7 @@ const HackathonFullView = () => {
                     </Link>
                     <Link to={"/hackathondetails/maincard"}>
                     
-                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4'>
+                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4 w-[296px] h-[224px]'>
                       <div className='bg-blue-900 w-[100%] h-[100px] rounded-2xl mx-auto my-auto'>
                         
                       </div>
@@ -112,7 +112,7 @@ const HackathonFullView = () => {
                     </Link>
                     <Link to={"/hackathondetails/maincard"}>
                     
-                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4'>
+                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4 w-[296px] h-[224px]'>
                       <div className='bg-blue-900 w-[100%] h-[100px] rounded-2xl mx-auto my-auto'>
                         
                       </div>
@@ -139,7 +139,7 @@ const HackathonFullView = () => {
                     </Link>
                     <Link to={"/hackathondetails/maincard"}>
                     
-                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4'>
+                    <div className='flex flex-col border-2 rounded-2xl gap-y-6 p-4 w-[296px] h-[224px]'>
                       <div className='bg-blue-900 w-[100%] h-[100px] rounded-2xl mx-auto my-auto'>
                         
                       </div>
@@ -164,6 +164,7 @@ const HackathonFullView = () => {
                       </div>
                     </div>
                     </Link>
+                    
                     </div> 
             </div>
           </div>

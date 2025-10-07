@@ -1,5 +1,4 @@
 import React from 'react'
-import { TopNavBar, LeftNavBar } from './Explore'
 import TopSection from './TopSection'
 import NavBar from './NavBar'
 import { useNavigate } from 'react-router-dom'
@@ -11,13 +10,9 @@ const AppliedJobCard = () => {
   }
   return (
     <>
-    <div className='bg-[url("/images/bg.png")] pb-10 hidden md:block'>
-      <div className='flex flex-col lg:mr-20'>
-        <TopSection />
-      </div>
+    <div className='hidden md:block'>
       <div className='flex flex-row'>
-        <NavBar />
-        <div className='w-screen ml-43 mt-30'>
+        <div className='w-full'>
           <div className='flex flex-col border-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] p-5 w-[90%] rounded-2xl bg-white'>
             <div className='flex flex-row justify-between'>
               <div className='border-2 flex items-center p-5 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] cursor-pointer bg-white' onClick={back}>

@@ -1,18 +1,14 @@
 import React from 'react'
-import { TopNavBar, LeftNavBar, Card } from './Explore'
+import { Card } from './Explore'
 import TopSection from './TopSection'
 import NavBar from './NavBar'
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 const SavedJobs = () => {
   return (
     <>
-        <div className='bg-[url("/images/bg.png")] pb-10 hidden md:block'>
-            <div className='flex flex-col lg: mr-20'>
-            <TopSection/>
-          </div>
-          <div className='flex flex-row'>
-            <NavBar />
-            <div className='flex-1 ml-35'>
+        <div className='hidden md:block overflow-y-auto'>
+          <div className='flex flex-row max-h-[calc(100vh-10px)] '>
+            <div className='flex-1'>
               <div className='font-[Jost] m-8'>
               <div className='font-semibold text-[45px]'>Saved Jobs</div>
               <div className='font-regular text-[26px]'>All your saved jobs will be shown here</div>
@@ -26,6 +22,9 @@ const SavedJobs = () => {
                 </div>
               </div>
               <div className='flex flex-wrap flex-row px-9 gap-x-14 relative px-10 gap-y-10'>         
+                <Card typeOf={"/savedjobdetails/maincard"}/>
+                <Card typeOf={"/savedjobdetails/maincard"}/>
+                <Card typeOf={"/savedjobdetails/maincard"}/>
                 <Card typeOf={"/savedjobdetails/maincard"}/>
                 <Card typeOf={"/savedjobdetails/maincard"}/>
                 <Card typeOf={"/savedjobdetails/maincard"}/>

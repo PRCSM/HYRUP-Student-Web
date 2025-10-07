@@ -1,5 +1,4 @@
 import React from 'react'
-import { TopNavBar, LeftNavBar } from './Explore'
 import TopSection from './TopSection'
 import NavBar from './NavBar'
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate} from 'react-router-dom'

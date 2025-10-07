@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 
 // --- Reusable Data Structures ---
@@ -70,7 +71,7 @@ const Profile = () => {
                     ALEX <br/> MAXWELLS
                 </div>
                 {/* Edit Profile Button */}
-                <div className='absolute right-4 top-4 bg-[#A5C6FA] w-fit px-4 h-[40px] border-2 border-black p-2 rounded-full shadow-[3px_3px_1px_black] flex items-center justify-center gap-2 cursor-pointer'>
+                <div className='absolute right-4 top-4  bg-[#A5C6FA] w-fit px-4 h-[40px] border-2 border-black p-2 rounded-full shadow-[3px_3px_1px_black] flex items-center justify-center gap-2 '>
                     <div className='text-lg font-semibold'>Edit Profile</div>
                     <div>
                         <svg width="18" height="18" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +179,7 @@ const Profile = () => {
 
         </div>
         {/* desktop */}
-        <div className='font-[Jost] h-[686px] w-fit rounded-md my-3  border-1 shadow-[3px_2px_1px_black] overflow-y-scroll bg-[#F7F4EF]  flex-col gap-20 hidden lg:flex mx-auto'>
+        <div className='font-[Jost] h-[686px] w-fit rounded-md my-3  border-1 shadow-[3px_2px_1px_black] overflow-y-scroll bg-[#F7F4EF]  flex-col  hidden lg:flex mx-auto scroll-hide'>
       <div className='flex flex-col w-full'>
       <div className=' p-4 flex items-center gap-10 justify-center bg-[#F7F4EF]'>
         <div className='w-[293px] mx-3 my-3 flex flex-col gap-4'>
@@ -192,7 +193,8 @@ const Profile = () => {
 </div>
                 </div>
                 <div className='w-full h-[301px] rounded-md border-2 shadow-[3px_2px_1px_black] flex flex-col items-center p-4 justify-between'>
-                    <div className='w-[169px] h-[52px] border-1 rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800 bg-[#FDE779]'>Education</div>
+                    <div className='w-[169px] h-[52px] border-1 rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800 bg-[#FDE779] cursor-default'>
+                        Education</div>
                     <div className='text-[25px] text-[Jost]-600'>Sastra University
 Deemed University
 Btech
@@ -204,7 +206,7 @@ Btech
             <div className='w-[656px] h-[226px] relative border-1 rounded-md shadow-[4px_2px_1px_black] '>
               <div className='w-[400px] text-[65px] h-[170px] p-4 font-extrabold'>ALEX 
 MAXWELLS</div>
-              <div className=' absolute right-5 top-5 bg-[#A5C6FA] w-[243px] h-[52px] border-1 p-2 rounded-full shadow-[5px_4px_1px_black]  flex items-center justify-center gap-2'>
+              <div className=' absolute cursor-pointer right-5 top-5 bg-[#A5C6FA] w-[243px] h-[52px] border-1 p-2 rounded-full shadow-[5px_4px_1px_black]  flex items-center justify-center gap-2'>
                   <div className='text-[30px]'>Edit Profile</div>
                   <div><svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.0033 22.0974L2.28906 24.2574L4.44906 16.5431L18.5748 2.486C18.7344 2.32272 18.9251 2.19299 19.1356 2.10441C19.3461 2.01584 19.5721 1.97021 19.8005 1.97021C20.0289 1.97021 20.2549 2.01584 20.4654 2.10441C20.6759 2.19299 20.8666 2.32272 21.0262 2.486L24.0605 5.53743C24.221 5.69691 24.3483 5.88655 24.4352 6.09544C24.5221 6.30432 24.5669 6.52833 24.5669 6.75457C24.5669 6.98081 24.5221 7.20482 24.4352 7.41371C24.3483 7.62259 24.221 7.81223 24.0605 7.97172L10.0033 22.0974Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -225,10 +227,10 @@ MAXWELLS</div>
             </div>
             <div className='w-[656px] h-[226px] relative  border-1 rounded-md shadow-[4px_2px_1px_black] '>
               <div className='flex items-center p-5  border-b-3 justify-between'>
-                  <div className={` bg-[#FDE779] w-[120px] border-2 border-black px-4 py-1 rounded-md shadow-[3px_3px_0_black] text-xl font-bold`}>
+                  <div className={`cursor-default bg-[#FDE779] w-[120px] border-2 border-black px-4 py-1 rounded-md shadow-[3px_3px_0_black] text-xl font-bold`}>
         Skills
     </div>
-                <div className={` bg-[#FFC6A5]  w-[150px] border-2 border-black px-4 py-1 rounded-md shadow-[3px_3px_0_black] text-xl font-bold`}>
+                <div className={`  bg-[#FFC6A5]  w-[150px] border-2 border-black px-4 py-1 rounded-md shadow-[3px_3px_0_black] text-xl font-bold hover:bg-[#fba674] hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] cursor-pointer`}>
         Verify Skills
     </div>
 
@@ -237,7 +239,7 @@ MAXWELLS</div>
                 <div className='flex flex-wrap gap-3 mt-2 p-5'>
                     {skills.map((skill, index) => (
                         <div 
-                            className='border-2 border-black rounded-full px-4 py-1 text-base cursor-pointer shadow-[3px_3px_0_black] font-semibold'
+                            className='border-2 border-black rounded-full px-4 py-1 text-base cursor-pointer shadow-[3px_3px_0_black] font-semibold hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] cursor-pointer'
                             style={{ backgroundColor: skill.color }} // 🎯 FIX: Changed 'bgColor' to 'skill.color'
                             key={index}
                         >
@@ -255,14 +257,14 @@ MAXWELLS</div>
         <div className='flex flex-col gap-5 p-5'>
           <div className='w-[432px] h-[360px] relative border-2 border-black rounded-md shadow-[5px_3px_1px_black] p-4'>
                     <div 
-        className='w-fit border-2 bg-[#FDE779] border-black rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800'
+        className='w-fit border-2 cursor-default  bg-[#FDE779] border-black rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800'
     >
         Job Preferences
     </div>
                     <div className='flex flex-wrap gap-3 m-2 mt-5'>
                         {jobPreferences.map((pref, index) => (
                             <div 
-                                className='border-2 border-black rounded-full px-4 py-1 text-base cursor-pointer shadow-[3px_3px_0_black] font-semibold bg-white text-lg'
+                                className='border-2 border-black rounded-full px-4 py-1 text-base cursor-pointer shadow-[3px_3px_0_black] font-semibold bg-white text-lg hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] cursor-pointer'
                                 style={{ color: '#277DFF' }} key={index}
                             >
                                 {pref}
@@ -272,7 +274,7 @@ MAXWELLS</div>
                 </div>
         <div className='w-[432px] h-[352px] p-4  border-1 rounded-md shadow-[5px_3px_1px_black]'>
            <div 
-        className='w-fit bg-[#FDE779] border-2 border-black rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800'
+        className='cursor-default w-fit bg-[#FDE779] border-2 border-black rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800'
     >
         Projects
     </div>
@@ -289,7 +291,7 @@ MAXWELLS</div>
         </div>
           <div className='w-[550px] h-[588px] p-4 border-1 rounded-md shadow-[5px_3px_1px_black]'>
                         <div 
-        className='w-fit bg-[#FDE779] mb-5 border-2 border-black rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800'
+        className='cursor-default w-fit bg-[#FDE779] mb-5 border-2 border-black rounded-md shadow-[4px_2px_1px_black] p-2 text-center text-[25px] font-bold text-[Jost]-800'
     >
         Experience
     </div>

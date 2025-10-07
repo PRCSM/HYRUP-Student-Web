@@ -1,22 +1,14 @@
 import React , { useState } from 'react'
 import Masonry from './Masonry'
 import Modal from './Modal'
-import TopSection from './TopSection'
-import NavBar from './NavBar'
 
 const ExploreJobs = ({isMobile}) => {
   const [modalOpen, setModalOpen] = useState(false)
   const [Image, setImage] = useState(false)
 
   return (
-    <div className='flex flex-col lg:mr-20'>
-      <div className='flex flex-row justify-center ml-60'>
-      <TopSection />
-      </div>
+    <div className='flex flex-col'>
       <div className='flex flex-row'>
-        <div className='pl-3'>
-          <NavBar />
-        </div>
         <div>    
           <div className='flex flex-col items-center mt-6'>
             <div className='flex flex-row justify-center items-center gap-x-7 mb-6 font-bold font-[Jost] text-[16px] px-4'>

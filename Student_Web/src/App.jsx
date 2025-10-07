@@ -4,7 +4,6 @@ import { Explore } from '../components/Explore'
 import JobFullView from '../components/JobFullView'
 import HackathonFullView from '../components/HackathonFullView'
 import Job from '../components/Job'
-import { AboutHackathon } from '../components/AboutHackathon'
 import { Hackathon } from '../components/Hackathon'
 import { Welcome } from '../components/Welcome'
 import Modal from '../components/Modal'
@@ -18,19 +17,19 @@ import SavedJobRoleDescription from '../components/SavedJobRoleDescription'
 import SavedAppliedJobs from '../components/SavedAppliedJobs'
 import AppliedJobCard from '../components/AppliedJobCard'
 import Profile from '../components/Profile'
+import CardContainer from '../components/CardContainer'
 function App() {
   return (
-    <>{/*
+    <>
     <Router>
       <Routes>
-        <Route path='/' element={<Explore />} />
+
+        <Route path='/' element={<CardContainer />} />
+        {/* <Route path='/Explore' element={<Explore />} /> */}
         <Route path='/jobs' element={<JobFullView />} />
         <Route path='/hackathons' element={<HackathonFullView />} />
         <Route path='/jobdetails/maincard' element={<Job />} />
-        <Route path='/jobdetails/about' element={<AboutCompany />} />
-        <Route path='/jobdetails/roledescription' element={<RoleDescription />} />
         <Route path='/hackathondetails/maincard' element={<Hackathon />} />
-        <Route path='/hackathondetails/about' element={<AboutHackathon />} />
         <Route path='/landing' element={<Welcome />} />
         <Route path='/explore' element={<ExploreJobs />} />
         <Route path='/hiring' element={<Hiring />} />
@@ -40,9 +39,9 @@ function App() {
         <Route path='/savedjobdetails/roledescription' element={<SavedJobRoleDescription />} />
         <Route path='/savedappliedjobs' element={<SavedAppliedJobs/>} />
         <Route path='/appliedjobcard' element={<AppliedJobCard/>} />
+        <Route path='/profile' element={<Profile/>} />
       </Routes>
-    </Router>*/}
-    <Profile />
+    </Router>
     </>
   )
 }

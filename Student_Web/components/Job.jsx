@@ -1,5 +1,4 @@
 import React from 'react'
-import { TopNavBar, LeftNavBar } from './Explore'
 import TopSection from './TopSection'
 import NavBar from './NavBar'
 import { useNavigate } from 'react-router-dom'
@@ -11,14 +10,10 @@ const Job = () => {
   }
   return (
     <>
-    <div className='bg-[url("/images/bg.png")] pb-10 hidden md:block'>
-      <div className='flex flex-col lg:mr-20'>
-        <TopSection />
-      </div>
+    <div className='hidden md:block max-h-screen py-1'>
       <div className='flex flex-row'>
-        <NavBar />
-        <div className='w-screen ml-43 mt-20 overflow-y-auto max-h-[calc(100vh-100px)]'>
-          <div className='flex flex-col border-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] p-5 w-[90%] rounded-2xl bg-white gap-y-5 overflow-y-auto'>
+        <div className='w-[80%] overflow-y-scroll scroll-hide max-h-[calc(100vh-100px)] border-3 rounded-2xl shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] box-border'>
+          <div className='flex flex-col p-5 bg-white gap-y-5'>
             <div className='flex flex-row justify-between'>
               <div className='border-2 flex items-center p-5 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] cursor-pointer bg-white' onClick={back}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +47,12 @@ const Job = () => {
                   <div className='text-[45px] font-bold'>UI/UX Designer</div>
                 <div className='flex flex-row items-center'>
                   <div className='font-regular text-[30px]'>Lumel Technologies</div>
-                  <div className='ml-2'>
+                  <div className='ml-2 relative'>
+                    <div className='absolute top-[9px] right-[7px]'>
+                      <svg width="9" height="7" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.976562 4.62406L3.92493 7.74586C4.08933 7.91993 4.37121 7.90274 4.51325 7.70998L9.61656 0.784058" stroke="#F8F8F8" stroke-width="1.536" stroke-linecap="round"/>
+                      </svg>
+                    </div>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.3173 2.2385C10.7351 0.188233 13.6648 0.188232 14.0827 2.2385C14.369 3.64376 16.0383 4.25131 17.1609 3.35889C18.7989 2.05686 21.0432 3.94004 20.0453 5.7792C19.3614 7.03977 20.2496 8.57814 21.6832 8.61614C23.7749 8.67158 24.2836 11.5568 22.3371 12.3243C21.0029 12.8503 20.6944 14.5997 21.7682 15.5503C23.3349 16.9373 21.8701 19.4745 19.8856 18.8112C18.5254 18.3566 17.1646 19.4984 17.3762 20.9168C17.6848 22.9864 14.9318 23.9884 13.8379 22.2047C13.0882 20.9821 11.3118 20.9821 10.5621 22.2047C9.46824 23.9884 6.71522 22.9864 7.02384 20.9168C7.23537 19.4984 5.8746 18.3566 4.51442 18.8112C2.52993 19.4745 1.06508 16.9373 2.63176 15.5503C3.70556 14.5997 3.3971 12.8503 2.06292 12.3243C0.116351 11.5568 0.625088 8.67158 2.71676 8.61614C4.1504 8.57814 5.03858 7.03977 4.35467 5.7792C3.35684 3.94004 5.60113 2.05686 7.23907 3.35889C8.36173 4.25131 10.031 3.64376 10.3173 2.2385Z" fill="#1FA7E3"/>
                     </svg>

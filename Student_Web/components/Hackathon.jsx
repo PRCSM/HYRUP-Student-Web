@@ -10,14 +10,10 @@ export const Hackathon = () => {
   }
   return (
     <>
-    <div className='bg-[url("/images/bg.png")] pb-10 hidden md:block'>
-      <div className='flex flex-col lg:mr-20'>
-        <TopSection />
-      </div>
-      <div className='flex flex-row'>
-        <NavBar />
-        <div className='w-screen ml-43 mt-30'>
-          <div className='flex flex-col border-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] p-5 w-[90%] rounded-2xl bg-white'>
+    <div className='hidden md:block rounded-2xl border-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] w-[80%]'>
+      <div className='flex flex-row max-h-[calc(100vh-100px)] overflow-y-auto'>
+        <div className=''>
+          <div className='flex flex-col  p-5 w-[90%]  bg-white'>
             <div className='flex flex-row justify-between'>
               <div className='border-2 flex items-center p-5 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] cursor-pointer bg-white' onClick={back}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,10 +101,17 @@ export const Hackathon = () => {
                 </div>
               </div>
             </div>
+        <div className='w-full mt-10'>
+          <div className='h-full flex flex-col w-[90%] rounded-2xl bg-white gap-y-10 justify-center'>
+            <div className='font-bold text-[33px] font-[Jost] pl-20'>About this Hackathon: </div>
+            <div className='border-3 px-8 py-10 font-[Jost] text-[25px] w-[90%] ml-20 font-regular rounded-2xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]'>
+              CodeSprint 2024 is a 48-hour global coding marathon that brings together developers, designers, and innovators to build impactful solutions using AI, fintech, and sustainability-driven technologies. Participants will collaborate in teams, attend expert-led workshops, and receive mentorship from top industry professionals to bring their creative ideas to life.
           </div>
         </div>
       </div>
-      <Link className="flex justify-center mt-4" to={"/hackathondetails/about"}>More</Link>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div className='bg-[url("/images/bg.png")] pb-10 md:hidden font-[Jost] mb-30'>
@@ -227,13 +230,8 @@ export const Hackathon = () => {
           <div className='border-2 text-[15px] w-[86%] mx-auto font-semibold py-6 px-6 rounded-2xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] mb-6'>
               Durante seu estágio, você pode aprimorar seu conhecimento e ganhar experiência profissional trabalhando em projetos de clientes. Esta função oferece uma oportunidade excepcional para construir um portfólio atraente, adquirir novas habilidades, obter insights sobre diversos setores e abraçar novos desafios para sua futura carreira.
           </div>
-            <div className='w-17 border-2 flex items-center p-5 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] cursor-pointer bg-white' onClick={back}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.1431 12L0.857422 12M0.857422 12L6.85742 6M0.857422 12L6.85742 18" stroke="black" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div className='font-bold text-[26px] font-[Jost] pl-20'>About this Hackathon: </div>
-            <div className='border-3 px-8 py-10 font-[Jost] text-[20px] w-[86%] mx-auto font-bold rounded-2xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]'>
+            <div className='font-bold text-xl font-[Jost] mb-5'>About this Hackathon: </div>
+            <div className='border-2 px-8 py-10 font-[Jost] text-[15px] w-[86%] mx-auto font-bold rounded-2xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]'>
               CodeSprint 2024 is a 48-hour global coding marathon that brings together developers, designers, and innovators to build impactful solutions using AI, fintech, and sustainability-driven technologies. Participants will collaborate in teams, attend expert-led workshops, and receive mentorship from top industry professionals to bring their creative ideas to life.
             </div>
         </div>
